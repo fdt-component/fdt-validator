@@ -1,0 +1,29 @@
+{
+  "name": "fdt-validator",
+  "version": "1.0.0",
+  "description": "fdt's validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdt-component/fdt-validator.git"
+  },
+  "keywords": [
+    "validator",
+    "fdt"
+  ],
+  "author": "guoquan.yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdt-component/fdt-validator/issues"
+  },
+  "homepage": "https://github.com/fdt-component/fdt-validator#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-stage-0": "^6.16.0"
+  }
+}
