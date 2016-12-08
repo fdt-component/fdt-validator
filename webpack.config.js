@@ -1,10 +1,10 @@
 var path = require('path');
 module.exports = {
   entry: {
-    index: [
+    'index': [
       './src/index.js'
     ],
-    test: [
+    'test': [
       './src/test.js'
     ]
   },

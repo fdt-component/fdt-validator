@@ -1,0 +1,1 @@
+"use strict";function checkSpell(e){var t=/^[A-Za-z ]+$/;return t.test(e)&&!!e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.checkSpell=checkSpell;
