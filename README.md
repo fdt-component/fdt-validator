@@ -8,12 +8,12 @@ validator.checkNum();
 ...
 
 or
-import {checkNum} from '@fdt/validator/tools/checkNum.js';
-import {checkEmail} from '@fdt/validator/tools/checkEmail.js';
-import {checkEmpty} from '@fdt/validator/tools/checkEmpty.js';
-import {checkIDCard} from '@fdt/validator/tools/checkIDCard.js';
-import {checkSpell} from '@fdt/validator/tools/checkSpell.js';
-import {checkMobile} from '@fdt/validator/tools/checkMobile.js';
+import checkNum from '@fdt/validator/tools/checkNum.js';
+import checkEmail from '@fdt/validator/tools/checkEmail.js';
+import checkEmpty from '@fdt/validator/tools/checkEmpty.js';
+import checkIDCard from '@fdt/validator/tools/checkIDCard.js';
+import checkSpell from '@fdt/validator/tools/checkSpell.js';
+import checkMobile from '@fdt/validator/tools/checkMobile.js';
 ```
 
 * checkEmail 校验email
