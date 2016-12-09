@@ -7,37 +7,27 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const del = require('del');
 const wpConfig = require('./webpack.config.js');
-const objectAssign = require('object-assign');
 
 gulp.task('clean', (cb) => {
-  del(['dist']).then(() => {
+  del(['dist','lib']).then(() => {
     cb();
   });
 });
 
-gulp.task('js', ['clean'], function(){
-  return gulp.src('src/tools/*.js')
+gulp.task('build', ['clean'], function(){
+  return gulp.src('./src/**/*.js')
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(uglify())
-    .pipe(gulp.dest('dist/tools/'))
+    .pipe(gulp.dest('lib/'))
 });
 
-gulp.task('webpack', ['js'], () => {
-  let config = objectAssign({}, wpConfig, {
-    plugins: [
-      new webpack.optimize.OccurenceOrderPlugin(),
-      new webpack.optimize.UglifyJsPlugin({
-        compressor: {
-          warnings: false
-        }
-      })
-    ]
-  })
-  return gulp.src('./src/*.js')
-    .pipe(gulpWebpack(config))
+gulp.task('webpack', ['build'], () => {
+  return gulp.src('./demo/*.js')
+    .pipe(gulpWebpack(wpConfig))
     .pipe(gulp.dest('dist'))
-  });
+});
 
-gulp.task('build', ['webpack']);
+gulp.task('dev', ['webpack'], () => {
+  return gulp.watch(['src/**/*.js', './demo/*.js'], ['webpack'])
+});

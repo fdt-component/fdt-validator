@@ -1,4 +1,4 @@
-import validator from 'index';
+import validator from '../lib/index';
 
 class App {
   constructor() {
@@ -9,6 +9,7 @@ class App {
     this.test('142301199203100295');
     this.test('13890000000');
     this.test(void 0);
+    this.test('asd asdf');
   }
 
   test(str) {

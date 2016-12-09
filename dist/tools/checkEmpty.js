@@ -1,1 +1,0 @@
-"use strict";function checkEmpty(e){return!!e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.checkEmpty=checkEmpty;

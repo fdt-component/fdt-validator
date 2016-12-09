@@ -1,1 +1,0 @@
-"use strict";function checkMobile(e){var t=/^1[34578]\d{9}$/;return t.test(e)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.checkMobile=checkMobile;

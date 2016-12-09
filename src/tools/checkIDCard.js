@@ -1,4 +1,4 @@
-export function checkIDCard(str) {
+export default function checkIDCard(str) {
   const city={ 11: 'bj', 12: 'tj', 13: 'hb', 14: 'sx', 15: 'nm', 21: 'ln',
     22: 'jl', 23: 'hlj', 31: 'sh', 32: 'js', 33: 'zj', 34: 'ah', 35:'fj',
     36: 'jx', 37: 'sd', 41: 'hn', 42: 'hb', 43: 'hn', 44: 'gd', 45: 'gx',

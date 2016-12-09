@@ -1,3 +1,3 @@
-export function checkEmpty(str) {
+export default function checkEmpty(str) {
   return !!str
 }

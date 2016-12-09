@@ -1,4 +1,4 @@
-export function checkSpell(str) {
+export default function checkSpell(str) {
   const re = /^[A-Za-z ]+$/
   return re.test(str) && !!str
 }

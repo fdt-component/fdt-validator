@@ -1,4 +1,4 @@
-export function checkNum(str) {
+export default function checkNum(str) {
   const re = /^[0-9]*$/
   return re.test(str) && !!str
 }
