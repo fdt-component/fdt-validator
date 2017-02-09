@@ -17,7 +17,7 @@ import checkMobile from '@fdt/validator/tools/checkMobile.js';
 ```
 
 * checkEmail 校验email
-* checkEmpty 校验空
+* checkEmpty 校验非空
 * checkSpell 校验英文
 * checkIDCard 校验身份证
 * checkMobile 校验手机
